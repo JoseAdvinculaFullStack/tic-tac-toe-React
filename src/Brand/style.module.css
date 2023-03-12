@@ -1,0 +1,8 @@
+.containerBrand {
+  display: flex;
+  justify-content: center;
+}
+.containerBrand img {
+  width: 32px;
+  height: 32px;
+}

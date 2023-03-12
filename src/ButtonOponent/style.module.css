@@ -1,0 +1,19 @@
+.containerButtonOponent {
+  font-size: 1em;
+  border: none;
+}
+.yellow {
+  font-size: 1em;
+  width: 20.4375em;
+  height: 3.5em;
+  padding: 0.875em 4.75em 1.375em 4.875em;
+  background: #f2b137;
+}
+
+.skyblue {
+  font-size: 1em;
+  width: 20.4375em;
+  height: 3.5em;
+  padding: 0.875em 3.6875em 1.375em 3.8125em;
+  background: #31c3bd;
+}
