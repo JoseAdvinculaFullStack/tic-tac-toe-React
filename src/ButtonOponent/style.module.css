@@ -1,6 +1,11 @@
 .containerButtonOponent {
   font-size: 1em;
+}
+.containerButtonOponent {
   border: none;
+  border-radius: 15px;
+  font-family: "Outfit";
+  font-weight: 700;
 }
 .yellow {
   font-size: 1em;
@@ -8,6 +13,9 @@
   height: 3.5em;
   padding: 0.875em 4.75em 1.375em 4.875em;
   background: #f2b137;
+  box-shadow: inset 0px -8px 0px #cc8b13;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 .skyblue {
@@ -16,4 +24,5 @@
   height: 3.5em;
   padding: 0.875em 3.6875em 1.375em 3.8125em;
   background: #31c3bd;
+  box-shadow: inset 0px -8px 0px #118c87;
 }

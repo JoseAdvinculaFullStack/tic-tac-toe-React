@@ -13,10 +13,10 @@ const Game = () => {
           <ButtonSelectPlayer type="oval" />
         </div>
         <h3>REMEMBER : X GOES FIRST</h3>
-        <div className={styles.containerButtonOponent}>
-          <ButtonOponent paragraph={"NEW GAME (VS CPU)"} color="yellow" />
-          <ButtonOponent paragraph={"NEW GAME  (VS PLAYER)"} color="skyblue" />
-        </div>
+      </div>
+      <div className={styles.containerButtonOponent}>
+        <ButtonOponent paragraph={"NEW GAME (VS CPU)"} color="yellow" />
+        <ButtonOponent paragraph={"NEW GAME  (VS PLAYER)"} color="skyblue" />
       </div>
     </div>
   );

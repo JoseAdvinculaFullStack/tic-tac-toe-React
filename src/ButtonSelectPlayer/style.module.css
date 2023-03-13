@@ -1,0 +1,12 @@
+.containerButtonPlayer {
+  font-size: 1em;
+  width: 8.125rem;
+  height: 3.375rem;
+  background: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.oval2 {
+  background: #a8bfc9;
+}
