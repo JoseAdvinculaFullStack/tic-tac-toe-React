@@ -6,7 +6,22 @@
   border: none;
   border-radius: 10px;
 }
-
 .oval2 {
   background: #a8bfc9;
+}
+
+.active_o {
+  background: none;
+}
+
+.active_o svg path {
+  fill: #a8bfc9;
+}
+
+.active_x {
+  background: #a8bfc9;
+}
+
+.active_x svg path {
+  fill: #1a2a33;
 }
