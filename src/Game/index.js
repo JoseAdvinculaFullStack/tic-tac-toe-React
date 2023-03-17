@@ -6,6 +6,7 @@ import { useState } from "react";
 const Game = () => {
   const [buttonStyleShape, setButtonStyleShape] = useState("activeShape");
   const [buttonStyleOval, setButtonStyleOval] = useState("disabledOval");
+  const [turnPlayer, setTurnPlayer] = useState("X");
   return (
     <div className={styles.containerGame}>
       <Brand />
@@ -18,6 +19,7 @@ const Game = () => {
             setButtonStyleOval={setButtonStyleShape}
             setButtonStyleShape={setButtonStyleOval}
             check={buttonStyleOval}
+            setTurnPlayer={setTurnPlayer}
           />
           <ButtonSelectPlayer
             type="oval"
@@ -25,9 +27,10 @@ const Game = () => {
             setButtonStyleOval={setButtonStyleOval}
             setButtonStyleShape={setButtonStyleShape}
             check={buttonStyleShape}
+            setTurnPlayer={setTurnPlayer}
           />
         </div>
-        <h3>REMEMBER : X GOES FIRST</h3>
+        <h3>REMEMBER : {turnPlayer} GOES FIRST</h3>
       </div>
       <div className={styles.containerButtonOponent}>
         <ButtonOponent paragraph={"NEW GAME (VS CPU)"} color="yellow" />

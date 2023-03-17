@@ -18,6 +18,10 @@
   margin-bottom: 1em;
 }
 
+.yellow:hover {
+  background-color: #ca993d;
+}
+
 .skyblue {
   font-size: 1em;
   width: 20.4375em;
@@ -25,4 +29,8 @@
   padding: 0.875em 3.6875em 1.375em 3.8125em;
   background: #31c3bd;
   box-shadow: inset 0px -8px 0px #118c87;
+}
+
+.skyblue:hover {
+  background-color: #45aca8;
 }

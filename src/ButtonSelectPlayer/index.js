@@ -9,6 +9,8 @@ const ButtonSelectPlayer = ({
   setButtonStyleShape,
   setButtonStyleOval,
   check,
+  turnPLayer,
+  setTurnPlayer,
 }) => {
   const typebutton = type === "oval" ? <Oval2 /> : <Shape2 fill="#a8bfc9" />;
   const typeclass = type === "oval" ? "oval2" : "shape2";
@@ -17,12 +19,14 @@ const ButtonSelectPlayer = ({
     buttonStyleOval,
     setButtonStyleShape,
     setButtonStyleOval,
-    check
+    check,
+    setTurnPlayer
   ) => {
     if (buttonStyleShape) {
       if (check === "activeOval" && buttonStyleShape == "disabledShape") {
         setButtonStyleShape("disabledOval");
         setButtonStyleOval("activeShape");
+        setTurnPlayer("X");
       }
     }
 
@@ -30,6 +34,7 @@ const ButtonSelectPlayer = ({
       if (check === "activeShape" && buttonStyleOval == "disabledOval") {
         setButtonStyleShape("disabledShape");
         setButtonStyleOval("activeOval");
+        setTurnPlayer("O");
       }
     }
   };
@@ -45,7 +50,8 @@ const ButtonSelectPlayer = ({
           buttonStyleOval,
           setButtonStyleShape,
           setButtonStyleOval,
-          check
+          check,
+          setTurnPlayer
         )
       }
     >
