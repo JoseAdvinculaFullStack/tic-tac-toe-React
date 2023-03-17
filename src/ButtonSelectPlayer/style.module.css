@@ -8,6 +8,7 @@
 }
 .oval2 {
   background: #a8bfc9;
+  width: 100%;
 }
 .shape2 {
   width: 100%;
@@ -30,16 +31,22 @@
 } */
 
 .disabledShape {
-  width: 100%;
+  background: #a8bfc9;
+}
+.disabledShape svg path {
+  fill: #1a2a33;
 }
 .activeOval {
-  width: 100%;
+  background: none;
+}
+.activeOval svg path {
+  fill: #a8bfc9;
 }
 
 .disabledOval {
-  width: 100%;
+  font-size: 10px;
 }
 
 .activeShape {
-  width: 100%;
+  font-size: 10px;
 }
