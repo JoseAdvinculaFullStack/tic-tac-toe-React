@@ -20,29 +20,15 @@ const ButtonSelectPlayer = ({
     check
   ) => {
     if (buttonStyleShape) {
-      if (buttonStyleShape === "activeShape") {
-        setButtonStyleShape("disabledShape");
-      } else {
-        setButtonStyleOval("activeOval");
-      }
-    } else {
-      if (check === "activeOval") {
-        setButtonStyleOval("disabledOval");
-      } else {
-        setButtonStyleShape("activeShape");
+      if (check === "activeOval" && buttonStyleShape == "disabledShape") {
+        setButtonStyleShape("disabledOval");
+        setButtonStyleOval("activeShape");
       }
     }
 
     if (buttonStyleOval) {
-      if (buttonStyleOval === "activeOval") {
-        setButtonStyleOval("disabledOval");
-      } else {
-        setButtonStyleShape("activeShape");
-      }
-    } else {
-      if (check === "activeShape") {
+      if (check === "activeShape" && buttonStyleOval == "disabledOval") {
         setButtonStyleShape("disabledShape");
-      } else {
         setButtonStyleOval("activeOval");
       }
     }
