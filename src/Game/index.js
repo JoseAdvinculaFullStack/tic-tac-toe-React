@@ -4,8 +4,8 @@ import ButtonSelectPlayer from "../ButtonSelectPlayer";
 import ButtonOponent from "../ButtonOponent";
 import { useState } from "react";
 const Game = () => {
-  const [buttonStylePlayer, setButtonStylePlayer] = useState("");
-  const [buttonStyleCPU, setButtonStyleCPU] = useState("");
+  const [buttonStyleShape, setButtonStyleShape] = useState("activeShape");
+  const [buttonStyleOval, setButtonStyleOval] = useState("disabledOval");
   return (
     <div className={styles.containerGame}>
       <Brand />
@@ -14,17 +14,17 @@ const Game = () => {
         <div className={styles.containerButtonsSelect}>
           <ButtonSelectPlayer
             type="shape"
-            buttonStylePlayer={buttonStylePlayer}
-            buttonStyleCPU={buttonStyleCPU}
-            setButtonStylePlayer={setButtonStylePlayer}
-            setButtonStyleCPU={setButtonStyleCPU}
+            buttonStyleShape={buttonStyleShape}
+            setButtonStyleOval={setButtonStyleShape}
+            setButtonStyleShape={setButtonStyleOval}
+            check={buttonStyleOval}
           />
           <ButtonSelectPlayer
             type="oval"
-            buttonStylePlayer={buttonStylePlayer}
-            buttonStyleCPU={buttonStyleCPU}
-            setButtonStylePlayer={setButtonStylePlayer}
-            setButtonStyleCPU={setButtonStyleCPU}
+            buttonStyleOval={buttonStyleOval}
+            setButtonStyleOval={setButtonStyleOval}
+            setButtonStyleShape={setButtonStyleShape}
+            check={buttonStyleShape}
           />
         </div>
         <h3>REMEMBER : X GOES FIRST</h3>

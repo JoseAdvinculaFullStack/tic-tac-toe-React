@@ -9,8 +9,11 @@
 .oval2 {
   background: #a8bfc9;
 }
+.shape2 {
+  width: 100%;
+}
 
-.active_o {
+/* .active_o {
   background: none;
 }
 
@@ -24,4 +27,19 @@
 
 .active_x svg path {
   fill: #1a2a33;
+} */
+
+.disabledShape {
+  width: 100%;
+}
+.activeOval {
+  width: 100%;
+}
+
+.disabledOval {
+  width: 100%;
+}
+
+.activeShape {
+  width: 100%;
 }
