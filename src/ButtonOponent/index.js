@@ -6,7 +6,7 @@ const ButtonOponent = ({ paragraph, color, turnPlayer }) => {
       ? "NEW GAME (VS CPU)"
       : "NEW GAME  (VS PLAYER)";
   const buttonColor = color === "skyblue" ? "skyblue" : "yellow";
-  const routes = paragraph === "NEW GAME (VS CPU)" ? "CPU" : "multiPlayer";
+  const routes = paragraph === "NEW GAME (VS CPU)" ? "CPU" : "MultiPlayer";
   const navigate = useNavigate();
   const handleClick = () => {
     paragraph === "NEW GAME (VS CPU)"

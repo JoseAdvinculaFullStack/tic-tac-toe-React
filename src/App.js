@@ -2,6 +2,7 @@ import "./App.css";
 import Game from "./routes/Game";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CPU from "./routes/CPU";
+import MultiPlayer from "./routes/MultiPlayer";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,17 +15,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/MultiPlayer",
-    element: <h1>multiPlayer</h1>,
+    element: <MultiPlayer />,
   },
 ]);
 function App() {
-  return (
-    <RouterProvider router={router}>
-      <div className="App">
-        <Game />
-      </div>
-    </RouterProvider>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;
