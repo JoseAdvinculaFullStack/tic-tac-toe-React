@@ -1,6 +1,11 @@
 .containerButtonOponent {
   font-size: 1em;
 }
+.containerButtonOponent a {
+  color: inherit;
+  text-decoration: none;
+  border: none;
+}
 .containerButtonOponent {
   border: none;
   border-radius: 15px;

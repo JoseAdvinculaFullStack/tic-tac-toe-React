@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
-import Brand from "../Brand/index";
-import ButtonSelectPlayer from "../ButtonSelectPlayer";
-import ButtonOponent from "../ButtonOponent";
+import Brand from "../../Brand/index";
+import ButtonSelectPlayer from "../../ButtonSelectPlayer";
+import ButtonOponent from "../../ButtonOponent";
 import { useState } from "react";
 const Game = () => {
   const [buttonStyleShape, setButtonStyleShape] = useState("activeShape");
@@ -33,8 +33,16 @@ const Game = () => {
         <h3>REMEMBER : {turnPlayer} GOES FIRST</h3>
       </div>
       <div className={styles.containerButtonOponent}>
-        <ButtonOponent paragraph={"NEW GAME (VS CPU)"} color="yellow" />
-        <ButtonOponent paragraph={"NEW GAME  (VS PLAYER)"} color="skyblue" />
+        <ButtonOponent
+          paragraph={"NEW GAME (VS CPU)"}
+          color="yellow"
+          turnPlayer={turnPlayer}
+        />
+        <ButtonOponent
+          paragraph={"NEW GAME  (VS PLAYER)"}
+          color="skyblue"
+          turnPlayer={turnPlayer}
+        />
       </div>
     </div>
   );
